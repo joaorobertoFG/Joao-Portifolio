@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>João Roberto</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Fontes -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+        
+        <!-- Ícone -->
+        <link rel="icon" type="image/png" href="img/heart.png">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <div class="user-cabecalho">
+                    <h6 class="user" id="user"><i class="fa-solid fa-user user-icon"></i> Olá, <b class="username" id="username">Username</b>!</h6>
+                </div>
+                <div class="user-menu">
+                    <nav class="user-lista">
+                        <a class="user-link" href="../index.html">Trocar usuário</a>
+                    </nav>
+
+                </div>
+            <div>
+                <nav class="menu">
+                    <ul id="menu">
+                        <li><a href="#Apresentação"><i class="fa-solid fa-mug-hot"></i>&#160 Sobre</a></li>
+                        <li><a href="#Conhecimentos"><i class="fa-solid fa-book"></i>&#160 Conhecimentos</a></li>
+                        <li><a href="#Projetos"><i class="fa-solid fa-laptop-code"></i>&#160 Projetos</a></li>
+                        <li><a href="#Certificados"><i class="fa-solid fa-graduation-cap"></i>&#160 Certificados</a></li>
+                    </ul>
+                </nav>
+            </div>  
+
+            <div class="cabecalho">
+                <button class="cabecalho-menu"><i><img class="img-lateral" src="img/menu.png" alt=""></i></button>
+            </div>
+        </header>
+
+        <div class="nav-lateral">
+            <nav class="menu-lateral">
+                <a class="menu-link" href="#Apresentação"><i class="fa-solid fa-mug-hot"></i> &#160 Sobre</a>
+                <a class="menu-link" href="#Conhecimentos"><i class="fa-solid fa-book"></i> &#160 Conhecimentos</a>
+                <a class="menu-link" href="#Projetos"><i class="fa-solid fa-laptop-code"></i> &#160 Projetos</a>
+                <a class="menu-link" href="#Certificados"><i class="fa-solid fa-graduation-cap"></i> &#160 Certificados</a>
+            </nav>
+        </div>
+
+        <main>
+            <section id="Apresentação">
+                <div class="apresentação">
+                    <img class="foto" src="img/foto.jpg">
+
+                    <h2>Olá, me chamo João Roberto</h2>
+
+                    <div class="dados">
+                        <a href="mailto:joao.robertofg@gmail.com" target="_blank"><p><i class="fa-solid fa-envelope"></i>&#160 joao.robertofg@gmail.com</p></a>
+                        <a href="https://api.whatsapp.com/send/?phone=5561998215760&text&type=phone_number&app_absent=0" target="_blank"><p><i class="fa-brands fa-whatsapp"></i>&#160 (61) 9 9821-5760</p></a>
+                        <p><i class="fa-solid fa-location-dot"></i>&#160 Luziânia-GO</p>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/joão-roberto-1877bb257/" target="_blank"><button id="botao-social">Linkedin <img class="social-icons" src="img/linkedin_icon.png" alt=""> </button></a>
+                        <a href="https://github.com/joaorobertoFG" target="_blank"><button id="botao-social">Github <img class="social-icons" src="img/github_icon.png" alt=""></button></a>
+                        <a href="dev.joao.pdf" download=""><button id="botao-social">Curriculo <img class="social-icons" src="img/download-direto.png" alt=""></button></a>
+                    </div>
+
+                    <div class="ap">
+                        <p>Sempre tive gosto e contato com tecnologia, principalmente com jogos, e sempre tive curiosidade e interesse em saber como tudo funcionava,
+                            até cheguei a brincar com RPG Maker e tive uma leve noção, sendo esse meu primeiro contato com programação.</p> 
+                        <p>E tendo conhecimento do mercado da tecnologia atualmente, resolvi ingressar nessa área e me apaixonei por aprender cada linguagem e funcionalidade 
+                            de cada uma, sendo assim decidi me dedicar e me profissionalizar na área, tendo como atual interesse focar no desenvolvimento Front-end.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="Conhecimentos"  class="conhecimentos">
+                
+                <h1>Conhecimentos</h1>
+
+                <div class="hidden-conhecimentos">
+                    <div class="icon">
+                        <img class= conhecimentos_icons src="img/html5_icon.png" alt="html5"></div>
+                    <div class="icon">
+                        <img class= conhecimentos_icons src="img/css_icon.png" alt="css"></div>
+                    <div class="icon">
+                        <img class= conhecimentos_icons src="img/javascript_icon.png" alt="javascript"></div>
+                    <div class="icon">
+                        <img class= conhecimentos_icons src="img/github2_icon.png" alt="github"></div>
+                    <div class="icon">
+                        <img class= conhecimentos_icons src="img/git_icon.png" alt="git"></div>
+                    <div class="icon">
+                        <img class= conhecimentos_icons src="img/linux_icon.png" alt="linux"></div>  
+                </div>  
+                
+            </section>
+            
+            <section id="Projetos" class="projetos">
+
+                <h1>Projetos</h1>  
+                    <div class="swiper-pagination"></div>
+                <!-- Slider main container -->
+                    <div class="swiper">
+                <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card" id="linkway">
+                                <div class="card-image"></div>                
+                                <div class="card-text">
+                                    <h3>Linkway</h3>
+                                    <p>Clássico Freeway do Atari (1981) recriado em Javascript com caracteristicas de The Legend of Zelda.</p>
+                                </div>
+                                <div class="tec">
+                                    <img src="img/css_icon-black.png" alt=""><img src="img/javascript_icon-black.png" alt="">
+                                </div>                            
+                                <div class="play-source">
+                                    <a href="https://joaorobertofg.github.io/LinkWay/" target="_blank"><img class="play-img" src="img/botao-play.png" alt="botão-play"></a><a href="https://github.com/joaorobertoFG/LinkWay"><img class="play-img" src="img/programming-code-signs.png" alt=""></a>
+                                </div>     
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="card" id="card-bau">
+                                <div class="card-image-bau"></div>                
+                                <div class="card-text">
+                                    <h3>Baú de Armazenamento</h3>
+                                    <p>Para se equipar antes de aventurar-se na masmorra, utilize o localStorage para passar os itens do baú para seu inventário. </p>
+                                </div>
+                                <div class="tec">
+                                    <img src="img/css_icon-black.png" alt=""><img src="img/javascript_icon-black.png" alt="">
+                                </div>                            
+                                <div class="play-source">
+                                    <a href="https://joaorobertofg.github.io/Bau-de-Armazenamento/" target="_blank"><img class="play-img" src="img/botao-play.png" alt="botão-play"></a><a href="https://github.com/joaorobertoFG/Bau-de-Armazenamento" target="_blank"><img class="play-img" src="img/programming-code-signs.png" alt=""></a>
+                                </div>     
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" id="card-pong">
+                                <div class="card-image-pong"></div>                
+                                <div class="card-text">
+                                    <h3>Pong</h3>
+                                    <p>Clássico jogo Pong do Atari (1972) recriado em Javascript. </p>
+                                </div>
+                                <div class="tec">
+                                    <img src="img/css_icon-black.png" alt=""><img src="img/javascript_icon-black.png" alt="">
+                                </div>                            
+                                <div class="play-source">
+                                    <a href="https://joaorobertofg.github.io/Pong/" target="_blank"><img class="play-img" src="img/botao-play.png" alt="botão-play"></a><a href="https://github.com/joaorobertoFG/Pong" target="_blank"><img class="play-img" src="img/programming-code-signs.png" alt=""></a>
+                                </div>     
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" id="card-4">
+                                <div class="card-image-4"></div>                
+                                <div class="card-text">
+                                    <h3>Em breve</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aperiam cupiditate culpa. </p>
+                                </div>
+                                <div class="tec">
+                                    <img src="img/css_icon-black.png" alt=""><img src="img/javascript_icon-black.png" alt="">
+                                </div>                            
+                                <div class="play-source">
+                                    <a href="#Projetos" target=""><img class="play-img" src="img/botao-play.png" alt="botão-play"></a><a href="#Projetos" target="_blank"><img class="play-img" src="img/programming-code-signs.png" alt=""></a>
+                                </div>   
+                            </div>
+                        </div>
+
+                        </div>
+
+                <!-- If we need pagination -->
+                     
+                    
+                <!-- If we need navigation buttons -->
+                        <div class="nav-swiper">
+                            <div class="swiper-button-prev"><i class="fa-solid fa-circle-chevron-left"></i></div>
+                            <div class="swiper-button-next"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                        </div>
+                    
+                    </div>
+                
+            </section>
+
+            <section id="Certificados">
+                        
+                <h1>Certificados</h1>
+
+                <div class="ap">
+                    <a href="https://cursos.alura.com.br/vitrinedev/joao-robertofg" target="_blank"><img class=vitrine src="img/vitrinedev.png"></a>  
+                </div>
+
+            </section>
+        </main>
+        
+        <footer>
+            <p class="copyright">&copy;João Roberto</p>
+            <a href="https://www.linkedin.com/in/joão-roberto-1877bb257/" target="_blank"><img class="icon_footer" src="img/linkedin_icon.png" alt="linkedin"></a>
+        </footer>
+
+    </body>
+
+    <script defer src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ee76d41b3b.js" crossorigin="anonymous"></script>
+    </html>

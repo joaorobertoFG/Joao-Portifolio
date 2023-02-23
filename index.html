@@ -16,17 +16,17 @@
         </div>
 
         <div class="form-value">
-            <form action="" id="add-user"  target="_blank" onsubmit="location.replace('./principal/main.html')">
+            <form target="_blank" onsubmit="location.replace('./principal/main.html')">
                 <h2 class="nome">Digite seu nome</h2>
                 <div class="inputbox">
                     <i class="fa-solid fa-user icon"></i>
-                    <input type="name" placeholder="" required>
+                    <input id="nome" type="name" required>
                 </div>
-                <input class="entrar" type="submit" value="Acessar">
+                <input class="entrar" type="submit" value="Acessar" onclick="redireciona()"/>
             </form>
-
-            <!-- <a href="https://joaorobertofg.github.io/Portifolio-Joao/"><button class="entrar">Entrar</button></a> -->
         </div>
     </section>
+
+    <script src="form.js"></script>
 </body>
 </html>

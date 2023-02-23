@@ -25,6 +25,10 @@ section {
     border-radius: 50px;
 }
 
+#user {
+    color: red;
+}
+
 .inputbox input {
     border-radius: 100px;
     outline: none;
@@ -93,4 +97,24 @@ a {
     text-align: center;
     text-decoration: none;
     color: black;
+}
+
+/* scroll */
+
+.texto {
+    transform: translateX(-50%);
+    opacity: 0; 
+    transition: all 2s;
+}
+
+.form-value {
+    transform: translateX(60%);
+    transition: 2s;
+    opacity: 0;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    scale: 1;
 }

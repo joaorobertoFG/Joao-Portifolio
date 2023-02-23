@@ -45,6 +45,12 @@ li:hover::before, li.active::before{
     opacity: 1;
 }
 
+.user-icon {
+    font-size: 30px;
+    color: white;
+    position: relative;
+}
+
 .user-lista {
     position: relative;
     top: 4vh;
@@ -75,13 +81,15 @@ li:hover::before, li.active::before{
     scale: 1;
 }
 
-.user {
+.user-cabecalho {
+    display: flex;
+    gap: .5em;
     font-size: 23px;
     color: white;
     position: fixed;
-    font-weight: 500;
-    align-items: center;
-    top: .2em;
+    font-weight: 700;
+    align-items: end;
+    top: .1em;
     z-index: 110;
     left: 3em;
     width: 15%;
@@ -89,9 +97,7 @@ li:hover::before, li.active::before{
     padding: 1em;
 }
 
-.username {
-    font-weight: 700;
-}
+
 
 .menu {
     display: flex;
@@ -327,7 +333,6 @@ p {
 .show{
     opacity: 1;
     transform: translateX(0);
-
 }
 
 .conhecimentos_icons{

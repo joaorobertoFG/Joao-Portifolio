@@ -1,1 +1,1 @@
-const form = document.getElementById('add-user')
+document.querySelector('h6').innerText = 'Olá, ' + localStorage.nome + '!'

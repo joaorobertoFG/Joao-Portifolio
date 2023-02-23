@@ -45,9 +45,57 @@ li:hover::before, li.active::before{
     opacity: 1;
 }
 
+.user-lista {
+    position: relative;
+    top: 4vh;
+    opacity: 0;
+    scale: 0;
+    left: 12vh;
+    z-index: 100;
+    transition: 400ms;
+    position: fixed;
+}
+
+.user-link {
+    color: white;
+    font-weight: 500;
+    transition: 400ms;
+}
+
+.user-link:hover {
+    font-weight: 700;
+    color: white;
+    transition: all 400ms;
+}
+
+.menu-user-ativo {
+    top: 10vh;
+    transition: 400ms;
+    opacity: 1;
+    scale: 1;
+}
+
+.user {
+    font-size: 23px;
+    color: white;
+    position: fixed;
+    font-weight: 500;
+    align-items: center;
+    top: .2em;
+    z-index: 110;
+    left: 3em;
+    width: 15%;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.username {
+    font-weight: 700;
+}
+
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -137,6 +185,12 @@ nav li {
         padding-left: 64px;
         display: flex;
         align-items: center;
+    }
+
+    .by-joao {
+        font-size: 50px;
+        margin-top: 15em;
+        place-self: center;
     }
 
 }
@@ -803,4 +857,3 @@ footer{
     }
 
 }
-

@@ -118,3 +118,32 @@ a {
     transform: translateX(0);
     scale: 1;
 }
+
+@media screen and (max-width:480px) {
+    section {
+        flex-direction: column;
+    }
+
+    .texto {
+        padding: 0;
+    }
+
+    .form-value {
+        scale: 1;
+        border: none;
+        padding: 0;
+        padding-top: 2em;
+    }
+
+    .nome {
+        display: none;
+    }
+
+    .fa-user:before {
+        display: none;
+    }
+
+    .inputbox input {
+        margin: 0;
+    }
+}

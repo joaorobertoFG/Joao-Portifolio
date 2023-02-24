@@ -1,6 +1,5 @@
 function redireciona() {
-    let nome = 
-    document.getElementById("nome").value;
+    let nome = document.getElementById("nome").value;
         localStorage.setItem('nome' , nome)
 }
 

@@ -28,10 +28,15 @@ listaMenu[3].addEventListener('click', () => {
 
 //User Menu
 
-const botaoUser = document.querySelector('.user-mobile, .user-menu');
+const botaoUser = document.querySelector('.user-menu');
+const botaoUserM = document.querySelector('.user-mobile');
 const menuUser = document.querySelector(".user-lista");
 const hideMenuUser = document.querySelector('.user-link');
 
 botaoUser.addEventListener('click', () => {
+    menuUser.classList.toggle('menu-user-ativo')
+})
+
+botaoUserM.addEventListener('click', () => {
     menuUser.classList.toggle('menu-user-ativo')
 })

@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #101011;
 }
 
 section {
@@ -23,10 +24,6 @@ section {
     flex-direction: column;
     border: 1px solid white;
     border-radius: 50px;
-}
-
-#user {
-    color: red;
 }
 
 .inputbox input {
@@ -126,6 +123,7 @@ a {
 
     .texto {
         padding: 0;
+        width: 100%;
     }
 
     .form-value {
@@ -139,11 +137,18 @@ a {
         display: none;
     }
 
-    .fa-user:before {
-        display: none;
-    }
-
     .inputbox input {
         margin: 0;
+        width: 70%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .inputbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

@@ -54,6 +54,10 @@ form {
     flex-direction: column;
 }
 
+.ola {
+    color: red;
+}
+
 .entrar {
     justify-self: center;
     margin-top: 2em;
@@ -114,6 +118,11 @@ a {
     opacity: 1;
     transform: translateX(0);
     scale: 1;
+}
+
+.pular {
+    color: white;
+    margin-top: 1em;
 }
 
 @media screen and (max-width:480px) {

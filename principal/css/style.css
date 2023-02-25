@@ -73,6 +73,11 @@ li:hover::before, li.active::before{
     transition: all 400ms;
 }
 
+.ola {
+    font-weight: 500;
+}
+
+
 .menu-user-ativo {
     top: 10vh;
     transition: 400ms;
@@ -202,9 +207,15 @@ nav li {
         align-self: center; 
         padding: 2em;
     }
+    
+    .ola {
+        color: red;
+    }
+    
 
     .user {
         font-size: 4em;
+        font-weight: 700;
         justify-self: center;
         align-self: center;
         color: white;

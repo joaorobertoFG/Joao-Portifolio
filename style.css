@@ -120,11 +120,6 @@ a {
     scale: 1;
 }
 
-.pular {
-    color: white;
-    margin-top: 1em;
-}
-
 @media screen and (max-width:480px) {
     section {
         flex-direction: column;

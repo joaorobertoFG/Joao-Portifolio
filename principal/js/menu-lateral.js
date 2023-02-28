@@ -28,7 +28,7 @@ listaMenu[3].addEventListener('click', () => {
 
 //User Menu
 
-const botaoUser = document.querySelector('.user-menu');
+const botaoUser = document.querySelector('.user-cabecalho');
 const botaoUserM = document.querySelector('.user-mobile');
 const menuUser = document.querySelector(".user-lista");
 const hideMenuUser = document.querySelector('.user-link');

@@ -1,5 +1,8 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 body{
-    background-color: #101011;
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -49,7 +52,7 @@ html{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;   
-    transition: 400ms;
+    transition: 1s;
     font-size: 1.3em;
 }
 
@@ -300,7 +303,7 @@ h1{
 
 .joao {
     grid-column: 1;
-    grid-row: 1 / span 1;
+    grid-row: 2 / span 1;
     justify-content: center;
     align-items: center;
 }
@@ -319,6 +322,8 @@ h1{
 
 .ap p {
     margin-bottom: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 .dados p {
@@ -329,6 +334,7 @@ p {
     font-size: 23px;
     color: white;
     line-break: strict;
+
 }
 
 .foto{
@@ -724,6 +730,7 @@ p {
     margin-top: 5em;
     margin-bottom: 5em;
     transition: 400ms;
+    scale: 0.8;
 
 }
 
@@ -744,17 +751,36 @@ p {
 footer{
     background-color: black ;
     box-shadow: 0 -20px 50px 10px black;
-    text-align: center;
+    text-align: start;
     padding-top: 1em;
     padding-bottom: 2em;
     margin-top: 4em;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+}
+
+.footer-li {
+    color: white;
+    line-height: 2em;
+    font-weight: 700;
+    border-left: solid 1px white ;
+    padding-left: 2em;
+}
+
+.footer-li a {
+    color: whitesmoke;
+    font-size: 1em;
 }
 
 .copyright{
     font-size: 20px;
     font-weight: bold;
-    color: wheat;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .icon_footer{
@@ -981,14 +1007,18 @@ footer{
     footer {
         width: 1050px;
         height: 150px;
+        gap: 1em;
+        display: flex;
+        flex-direction: column;
     }
 
     .copyright {
-        font-size: 40px;
+        font-size: 2.5em;
     }
 
-    .icon_footer {
-        width: 8%;
+    .footer-li {
+        font-size: 2.4em;
+        border: none;
     }
 
 }

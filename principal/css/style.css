@@ -246,22 +246,24 @@ html{
 
     .user-lista {
         position: fixed;
-        top: -35vh;
-        opacity: 0;
+        top: 28vh;
+        opacity: 1;
+        right: -80vh;
         scale: 3;
-        left: 85vh;
-        z-index: 100;
+        justify-self: end;
+
         transition: 400ms;
         position: fixed;
-        background-color: #111314;
+        background-color: #101011;
         box-shadow: -5px 5px 4px black;
         padding: 1em;
     }
 
     .menu-user-ativo {
+        right: 20vh;
         transition: 400ms;
         opacity: 1;
-        top: 25vh;
+        top: 28vh;
     }
 }
 
@@ -762,16 +764,21 @@ footer{
 }
 
 .footer-li {
-    color: white;
+    color: rgb(212, 212, 212);
     line-height: 2em;
     font-weight: 700;
     border-left: solid 1px white ;
     padding-left: 2em;
+    font-size: 1.1em;
 }
 
 .footer-li a {
-    color: whitesmoke;
-    font-size: 1em;
+    color: rgb(212, 212, 212);
+
+}
+
+.footer-li a:hover {
+    color: white;
 }
 
 .copyright{
@@ -801,13 +808,15 @@ footer{
 
     .foto {
         width: 400px;
-        float: right;
-        position: absolute;
+
         top: 20vh;
-        left: 77vh;
-        border-radius: 0% 0% 0% 80%;
+        justify-content: end;
         margin: 0;
         padding: 0;
+    }
+
+    .joao {
+        padding-top: 1em;
     }
 
     h1 {
@@ -829,17 +838,20 @@ footer{
         padding-bottom: 100px;
         align-items: center;
         justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .dados {
-        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .social-icon-ap {
         flex-direction: row;
         justify-content: center;
         gap: 2em;
-        padding: 1em 0 0.5em 0;
         justify-content: center;
         width: 100%;
         font-size: 3em;
@@ -1017,8 +1029,13 @@ footer{
     }
 
     .footer-li {
-        font-size: 2.4em;
+        font-size: 2.5em;
         border: none;
+        color: rgb(212, 212, 212);
+    }
+
+    .footer-li a {
+        font-size: 1em;
     }
 
 }

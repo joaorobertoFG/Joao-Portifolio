@@ -43,7 +43,8 @@ html{
     gap: .5em;
     grid-column: 2;
     grid-row: 1 / span 2;
-    width: 20em;
+    width: 0;
+    justify-self: end;
     align-items: center;
 }
 
@@ -76,9 +77,8 @@ html{
 
 .dados {
     display: grid;
-    grid-template-columns: 62% 38% 0%;
-    align-items: center;
-    
+    grid-template-columns: 62% 38%;
+    align-items: center;  
 }
 
 .nav-menu {
@@ -855,8 +855,9 @@ footer{
         font-size: 3em;
     }
  
-    .icon-div {
+    .icon-div, .social-icon-ap {
         width: 100%;
+        margin-right: 0;
     }
 
     .dados p {
@@ -945,8 +946,8 @@ footer{
     
     .card {
         grid-template-rows: 500px 560px 170px;
-        min-height: 100vh;
-        width: 100vh;
+        min-height: 100%;
+        min-width: 100%;
     }
 
     .card:hover {
@@ -1040,5 +1041,30 @@ footer{
     .footer-li a {
         font-size: 1em;
     }
+}
 
+@media screen and (max-width: 1024px) {
+    .nav-menu {
+      justify-self: start;
+      margin-left: 2em;
+      gap: 2em;
+    }
+
+    .icon-div, .social-icon-ap {
+       width: 0;
+       justify-self: end;
+
+    }
+
+    .swiper-button-prev {
+        display: none;
+    }
+    
+    .swiper-button-next {
+        display: none;
+    }
+
+    body {
+        min-width: 115vh;
+    }
 }

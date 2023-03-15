@@ -161,6 +161,7 @@ html{
     position: fixed;
 }
 
+
 .menu-lateral, .img-lateral, .cabecalho, .menu-link {
     display: none;
 }
@@ -405,7 +406,7 @@ p {
 
 .conhecimentos{
     scroll-snap-align: start;
-    min-height: 100vh;
+    height: 100vh;
     margin: auto auto;
     font-size: 25px;
     display: flex;
@@ -419,8 +420,10 @@ p {
     transition: all 2s;
     transform: translateX(-50%);
     display: flex;
-    margin-top: 4em;
-    margin-bottom: 5em;
+    gap: 2em;
+    justify-self: center;
+    align-self: center;
+    transition: 2s;
 }
 
 .show{
@@ -428,18 +431,84 @@ p {
     transform: translateX(0);
 }
 
-.conhecimentos_icons{
-    width: 80px;
-    padding: 30px 40px;
+.icon--conhecimentos {
+    font-size: 3.5em;
+    color: white;
+    margin-top: 1em;
     transition: 400ms;
-    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.conhecimentos_icons:hover{
-    opacity: 0.5;
+.icon-name {
+    margin-top: 0;
+    opacity: 0;
+    font-size: .2em;
+    margin-top: .5em;
+    background: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.icon--conhecimentos:hover .icon-name {
+    opacity: 1;
+}
+
+.icon--conhecimentos:nth-child(1) {
+    background-image: linear-gradient(to right, #ff7300 50%, #ff3c00 0%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.icon--conhecimentos:nth-child(2) {
+    background-image: linear-gradient(to right,#008cff 50%,  #0063b4 0%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.icon--conhecimentos:nth-child(3) {
+    background-image: linear-gradient(to right, #fffb00 0%, #e5ff00 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.icon--conhecimentos:nth-child(4) {
+    background-image: linear-gradient(to top, #b1c8f3 60%, #ff0000 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.icon--conhecimentos:nth-child(5) {
+    background-image: linear-gradient(to right, #ff0000 0%, #ff5a28 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.icon--conhecimentos:nth-child(6) {
+    background-image: linear-gradient(to right, #2646ad 0% 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.icon--conhecimentos:nth-child(7) {
+    background-image: linear-gradient(to top, #ffee00 0%, #00c3ff 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.icon--conhecimentos:hover {
     transform: scale(1.2);
     transition: 400ms;
-
 }
 
 /* Projetos */
@@ -884,12 +953,12 @@ footer{
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        column-gap: 14.5rem;
-        row-gap: 8rem;
+        column-gap: 7.5rem;
+        row-gap: 2rem;
     }
 
-    .conhecimentos_icons {
-        width: 150px;
+    .icon--conhecimentos {
+        font-size: 7em;
     }
 
     .conhecimentos {

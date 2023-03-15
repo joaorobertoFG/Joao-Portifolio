@@ -961,6 +961,10 @@ footer{
         font-size: 7em;
     }
 
+    .icon-name {
+        opacity: 1;
+    }
+
     .conhecimentos {
         width: 1000px;
         min-height: 250vh;

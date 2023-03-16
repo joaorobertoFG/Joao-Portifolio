@@ -60,7 +60,7 @@ form {
 
 .entrar {
     justify-self: center;
-    margin-top: 2em;
+    margin-top: 1em;
     width: 40%;
     align-self: center;
     background: white;
@@ -97,7 +97,8 @@ form {
 a {
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: white;
+    margin-top: 1em;
 }
 
 /* scroll */ 
